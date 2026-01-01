@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "./dist/index.js",
+  "packageManager": "pnpm@9.15.0",
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
@@ -11,7 +12,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "AGPL-3.0-or-later",
   "dependencies": {
     "zod": "^4.2.1"
   },
@@ -21,7 +22,9 @@
     "tsup": "^8.5.1",
     "typescript": "^5.9.3"
   },
-  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
   "type": "module",
   "types": "./dist/index.d.ts",
   "exports": {
